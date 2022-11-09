@@ -5262,5 +5262,9 @@ NUKETHESERVER.MouseButton1Down:connect(function()
 	end
 end)
 end)
-local Tab = Window:CreateTab("Scripts", true, "rbxassetid://3926305904", Vector2.new(524, 44), Vector2.new(36, 36))
-local Section = Tab:CreateSection("Comming Soon")
+local Tab = Window:CreateTab("Settings", true, "rbxassetid://3926305904", Vector2.new(524, 44), Vector2.new(36, 36))
+local Section = Tab:CreateSection("Ui")
+
+local Button = Section:CreateButton("Destroy UI", function()
+   Library:Destroy()
+end)
