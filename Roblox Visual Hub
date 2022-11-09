@@ -34,3 +34,5 @@ end)
  
 local Tab = Window:CreateTab("Misc", true, "rbxassetid://3926305904", Vector2.new(524, 44), Vector2.new(36, 36))
 local Section = Tab:CreateSection("Server")
+
+
