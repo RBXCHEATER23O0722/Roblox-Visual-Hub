@@ -24,11 +24,6 @@ until game:GetService("Players").LocalPlayer.PlayerGui.BRICKCOUNT.ImageLabel.Tex
 end)
  
  
-local Button = Section:CreateButton("Rogue Hub", function()
- 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Kitzoon/Rogue-Hub/main/Main.lua", true))()
- 
-end)
  
  
 local Tab = Window:CreateTab("Others", true, "rbxassetid://3926305904", Vector2.new(524, 44), Vector2.new(36, 36))
@@ -5264,3 +5259,13 @@ end)
 end)
 local Tab = Window:CreateTab("Scripts", true, "rbxassetid://3926305904", Vector2.new(524, 44), Vector2.new(36, 36))
 local Section = Tab:CreateSection("Comming Soon")
+
+local Tab = Window:CreateTab("Settings", true, "rbxassetid://3926305904", Vector2.new(524, 44), Vector2.new(36, 36))
+local Section = Tab:CreateSection("UI")
+
+ 
+local Button = Section:CreateButton("Destroy UI", function()
+
+ Libraray:Destroy()
+end)
+ 
