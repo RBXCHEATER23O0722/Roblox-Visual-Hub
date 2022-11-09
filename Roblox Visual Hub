@@ -1,1 +1,36 @@
 
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/VisualRoblox/Roblox/main/UI-Libraries/Visual%20UI%20Library/Source.lua"))()
+ 
+local Window = Library:CreateWindow("VS Hub", "VS HUB", "Visual UI Library", "rbxassetid://10618928818", false, "VisualUIConfigs", "Default")
+ 
+local Tab = Window:CreateTab("Slap Battles", true, "rbxassetid://3926305904", Vector2.new(524, 44), Vector2.new(36, 36))
+ 
+local Section = Tab:CreateSection("Slap")
+ 
+local Label = Section:CreateLabel("Label")
+ 
+ 
+local Button = Section:CreateButton("BOB REPLICA GLOVE ONLY", function()
+   game.ReplicatedStorage.bob:FireServer()
+end)
+ 
+ 
+local Button = Section:CreateButton("Brick AutoFarm", function()
+ repeat 
+    local c = tonumber(game:GetService("Players").LocalPlayer.PlayerGui.BRICKCOUNT.ImageLabel.TextLabel.Text)
+    game:GetService("Players").LocalPlayer.PlayerGui.BRICKCOUNT.ImageLabel.TextLabel.Text = c + 1
+    game:GetService("ReplicatedStorage").lbrick:FireServer()
+    wait(1.5)
+until game:GetService("Players").LocalPlayer.PlayerGui.BRICKCOUNT.ImageLabel.TextLabel.Text=="1005"
+end)
+ 
+ 
+local Button = Section:CreateButton("Rogue Hub", function()
+ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kitzoon/Rogue-Hub/main/Main.lua", true))()
+ 
+end)
+ 
+ 
+local Tab = Window:CreateTab("Misc", true, "rbxassetid://3926305904", Vector2.new(524, 44), Vector2.new(36, 36))
+local Section = Tab:CreateSection("Server")
