@@ -7,7 +7,6 @@ local Tab = Window:CreateTab("Slap Battles", true, "rbxassetid://3926305904", Ve
  
 local Section = Tab:CreateSection("Slap")
  
-local Label = Section:CreateLabel("Label")
  
  
 local Button = Section:CreateButton("BOB REPLICA GLOVE ONLY", function()
@@ -32,5 +31,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Kitzoon/Rogue-Hub/mai
 end)
  
  
-local Tab = Window:CreateTab("Misc", true, "rbxassetid://3926305904", Vector2.new(524, 44), Vector2.new(36, 36))
-local Section = Tab:CreateSection("Server")
+local Tab = Window:CreateTab("Others", true, "rbxassetid://3926305904", Vector2.new(524, 44), Vector2.new(36, 36))
+local Section = Tab:CreateSection("Hub")
+local Button = Section:CreateButton("Rogue Hub", function()
+ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kitzoon/Rogue-Hub/main/Main.lua", true))()
+ 
+end)
+
+
+
